@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445C0FD1DEBC3DFA27B5C621 /* Pods_BeatportPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A573D6A06AA2E2B14C55CF36 /* Pods_BeatportPlay.framework */; };
+		9F084602270904080001C0A0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F084601270904080001C0A0 /* PlayerView.swift */; };
+		9F16CFAD273C1AA40088814A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CFAC273C1AA40088814A /* LoginView.swift */; };
+		9F16CFAF273C1C3E0088814A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CFAE273C1C3E0088814A /* LoginViewModel.swift */; };
+		9F16CFB1273C245F0088814A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CFB0273C245F0088814A /* LoginModel.swift */; };
+		9F2C9DEF270B3B8100B34360 /* YoutubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C9DEE270B3B8100B34360 /* YoutubePlayer.swift */; };
+		9F2C9DF1270B3D3900B34360 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C9DF0270B3D3900B34360 /* PlayerViewModel.swift */; };
+		9F2C9DF3270B3DFF00B34360 /* YoutubeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C9DF2270B3DFF00B34360 /* YoutubeModel.swift */; };
+		9F5723E1273DB37B0073F6BF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5723E0273DB37B0073F6BF /* RegisterView.swift */; };
+		9F5723E3273DB39D0073F6BF /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5723E2273DB39D0073F6BF /* RegisterViewModel.swift */; };
+		9F5723E5273DB3AC0073F6BF /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5723E4273DB3AC0073F6BF /* RegisterModel.swift */; };
+		9F7317752704655F00606A5E /* BeatportPlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317742704655F00606A5E /* BeatportPlayApp.swift */; };
+		9F7317772704655F00606A5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317762704655F00606A5E /* ContentView.swift */; };
+		9F7317792704656100606A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7317782704656100606A5E /* Assets.xcassets */; };
+		9F73177C2704656100606A5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F73177B2704656100606A5E /* Preview Assets.xcassets */; };
+		9F7317862704663400606A5E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317852704663400606A5E /* ListViewModel.swift */; };
+		9F7317882704665700606A5E /* BeatportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317872704665700606A5E /* BeatportModel.swift */; };
+		9F73178A2704668E00606A5E /* CellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317892704668E00606A5E /* CellHelper.swift */; };
+		9F73178C2704670600606A5E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73178B2704670600606A5E /* ListView.swift */; };
+		9F75BC6E2759167D00D81B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F75BC6D2759167D00D81B95 /* LaunchScreen.storyboard */; };
+		9F8E1C6A27582B6E00899FDF /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F8E1C6927582B6E00899FDF /* Property List.plist */; };
+		9F982C09275E0BFF00FF7476 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F982C07275E09DC00FF7476 /* FakeModel.swift */; };
+		9FA8170E27596A1300EBDBBF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD231882758FCEE00C68856 /* WidgetKit.framework */; };
+		9FA8170F27596A1300EBDBBF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD2318A2758FCEE00C68856 /* SwiftUI.framework */; };
+		9FA8171227596A1300EBDBBF /* BeatportPlayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8171127596A1300EBDBBF /* BeatportPlayWidget.swift */; };
+		9FA8171527596A1300EBDBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8171427596A1300EBDBBF /* Assets.xcassets */; };
+		9FA8171727596A1300EBDBBF /* BeatportPlayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8171327596A1300EBDBBF /* BeatportPlayWidget.intentdefinition */; };
+		9FA8171827596A1300EBDBBF /* BeatportPlayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8171327596A1300EBDBBF /* BeatportPlayWidget.intentdefinition */; };
+		9FA8171B27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FA8170D27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FB1883D271378D5009CE7BF /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1883C271378D5009CE7BF /* CustomAlert.swift */; };
+		9FB7C7C4275AD00800870CF1 /* BeatportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317872704665700606A5E /* BeatportModel.swift */; };
+		9FC6837327058F890087148B /* SliderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6837227058F890087148B /* SliderMenuView.swift */; };
+		9FC6837527058F9F0087148B /* SliderMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6837427058F9F0087148B /* SliderMenuViewModel.swift */; };
+		9FC6837727058FBF0087148B /* DataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6837627058FBF0087148B /* DataSourceModel.swift */; };
+		9FC68379270591CB0087148B /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC68378270591CB0087148B /* dataSource.json */; };
+		9FE78FD927672B650078D897 /* AirPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE78FD827672B650078D897 /* AirPlayView.swift */; };
+		9FE93CC9275BD8CB0042C0CC /* CellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317892704668E00606A5E /* CellHelper.swift */; };
+		9FEA2D2E2763E7C700AD693A /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA2D2D2763E7C700AD693A /* CustomProgressView.swift */; };
+		9FF27FC027598BDC003C3957 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7317852704663400606A5E /* ListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA8171927596A1300EBDBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F7317692704655F00606A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA8170C27596A1300EBDBBF;
+			remoteInfo = BeatportPlayWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FD2319B2758FCEF00C68856 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9FA8171B27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FD9F09EEFC45A2E2C0C032B /* Pods-BeatportPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatportPlay.debug.xcconfig"; path = "Target Support Files/Pods-BeatportPlay/Pods-BeatportPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		7E446FE404404687C6717D54 /* Pods-BeatportPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatportPlay.release.xcconfig"; path = "Target Support Files/Pods-BeatportPlay/Pods-BeatportPlay.release.xcconfig"; sourceTree = "<group>"; };
+		9F084601270904080001C0A0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		9F16CFAC273C1AA40088814A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9F16CFAE273C1C3E0088814A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9F16CFB0273C245F0088814A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9F2C9DEE270B3B8100B34360 /* YoutubePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayer.swift; sourceTree = "<group>"; };
+		9F2C9DF0270B3D3900B34360 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		9F2C9DF2270B3DFF00B34360 /* YoutubeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeModel.swift; sourceTree = "<group>"; };
+		9F5723E0273DB37B0073F6BF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9F5723E2273DB39D0073F6BF /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		9F5723E4273DB3AC0073F6BF /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		9F71F7FC275A7F5B0060B6F7 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F71F800275AA6370060B6F7 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F71F804275AA6450060B6F7 /* Pods_BeatportPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BeatportPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F71F808275AA8D70060B6F7 /* Pods_BeatportPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BeatportPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F71F810275AB8B20060B6F7 /* Pods_BeatportPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BeatportPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F71F812275AB8C80060B6F7 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7317712704655F00606A5E /* BeatportPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatportPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7317742704655F00606A5E /* BeatportPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatportPlayApp.swift; sourceTree = "<group>"; };
+		9F7317762704655F00606A5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F7317782704656100606A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F73177B2704656100606A5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F7317852704663400606A5E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9F7317872704665700606A5E /* BeatportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatportModel.swift; sourceTree = "<group>"; };
+		9F7317892704668E00606A5E /* CellHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHelper.swift; sourceTree = "<group>"; };
+		9F73178B2704670600606A5E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9F75BC6D2759167D00D81B95 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F7AA418274AFC180057C8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F8E1C6927582B6E00899FDF /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		9F982C07275E09DC00FF7476 /* FakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
+		9FA8170D27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BeatportPlayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA8171127596A1300EBDBBF /* BeatportPlayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatportPlayWidget.swift; sourceTree = "<group>"; };
+		9FA8171327596A1300EBDBBF /* BeatportPlayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BeatportPlayWidget.intentdefinition; sourceTree = "<group>"; };
+		9FA8171427596A1300EBDBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA8171627596A1300EBDBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA8171F27596D4E00EBDBBF /* BeatportPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeatportPlay.entitlements; sourceTree = "<group>"; };
+		9FA817222759738D00EBDBBF /* BeatportPlayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeatportPlayWidgetExtension.entitlements; sourceTree = "<group>"; };
+		9FB1883C271378D5009CE7BF /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		9FC6837227058F890087148B /* SliderMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuView.swift; sourceTree = "<group>"; };
+		9FC6837427058F9F0087148B /* SliderMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuViewModel.swift; sourceTree = "<group>"; };
+		9FC6837627058FBF0087148B /* DataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceModel.swift; sourceTree = "<group>"; };
+		9FC68378270591CB0087148B /* dataSource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
+		9FD231882758FCEE00C68856 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9FD2318A2758FCEE00C68856 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9FE78FD827672B650078D897 /* AirPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayView.swift; sourceTree = "<group>"; };
+		9FEA2D2D2763E7C700AD693A /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		A573D6A06AA2E2B14C55CF36 /* Pods_BeatportPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeatportPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F73176E2704655F00606A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445C0FD1DEBC3DFA27B5C621 /* Pods_BeatportPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA8170A27596A1300EBDBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA8170F27596A1300EBDBBF /* SwiftUI.framework in Frameworks */,
+				9FA8170E27596A1300EBDBBF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189E0C2A3BBCEBA3198B0452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F71F812275AB8C80060B6F7 /* youtube_ios_player_helper.framework */,
+				9F71F810275AB8B20060B6F7 /* Pods_BeatportPlay.framework */,
+				9F71F808275AA8D70060B6F7 /* Pods_BeatportPlay.framework */,
+				9F71F804275AA6450060B6F7 /* Pods_BeatportPlay.framework */,
+				9F71F800275AA6370060B6F7 /* youtube_ios_player_helper.framework */,
+				9F71F7FC275A7F5B0060B6F7 /* youtube_ios_player_helper.framework */,
+				A573D6A06AA2E2B14C55CF36 /* Pods_BeatportPlay.framework */,
+				9FD231882758FCEE00C68856 /* WidgetKit.framework */,
+				9FD2318A2758FCEE00C68856 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B471E5EED2D421F4C7BA3D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F09EEFC45A2E2C0C032B /* Pods-BeatportPlay.debug.xcconfig */,
+				7E446FE404404687C6717D54 /* Pods-BeatportPlay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F7317682704655F00606A5E = {
+			isa = PBXGroup;
+			children = (
+				9FA817222759738D00EBDBBF /* BeatportPlayWidgetExtension.entitlements */,
+				9F7317732704655F00606A5E /* BeatportPlay */,
+				9FA8171027596A1300EBDBBF /* BeatportPlayWidget */,
+				9F7317722704655F00606A5E /* Products */,
+				8B471E5EED2D421F4C7BA3D0 /* Pods */,
+				189E0C2A3BBCEBA3198B0452 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F7317722704655F00606A5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F7317712704655F00606A5E /* BeatportPlay.app */,
+				9FA8170D27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F7317732704655F00606A5E /* BeatportPlay */ = {
+			isa = PBXGroup;
+			children = (
+				9FA8171F27596D4E00EBDBBF /* BeatportPlay.entitlements */,
+				9F8E1C6927582B6E00899FDF /* Property List.plist */,
+				9F7AA418274AFC180057C8DB /* Info.plist */,
+				9F731782270465EC00606A5E /* View */,
+				9F731783270465F500606A5E /* ViewModel */,
+				9F7317842704660300606A5E /* Model */,
+				9F7317742704655F00606A5E /* BeatportPlayApp.swift */,
+				9F7317762704655F00606A5E /* ContentView.swift */,
+				9F7317782704656100606A5E /* Assets.xcassets */,
+				9F73177A2704656100606A5E /* Preview Content */,
+			);
+			path = BeatportPlay;
+			sourceTree = "<group>";
+		};
+		9F73177A2704656100606A5E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9F73177B2704656100606A5E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F731782270465EC00606A5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F2C9DEE270B3B8100B34360 /* YoutubePlayer.swift */,
+				9F7317892704668E00606A5E /* CellHelper.swift */,
+				9F73178B2704670600606A5E /* ListView.swift */,
+				9FC6837227058F890087148B /* SliderMenuView.swift */,
+				9F084601270904080001C0A0 /* PlayerView.swift */,
+				9FB1883C271378D5009CE7BF /* CustomAlert.swift */,
+				9F16CFAC273C1AA40088814A /* LoginView.swift */,
+				9F5723E0273DB37B0073F6BF /* RegisterView.swift */,
+				9F75BC6D2759167D00D81B95 /* LaunchScreen.storyboard */,
+				9FEA2D2D2763E7C700AD693A /* CustomProgressView.swift */,
+				9FE78FD827672B650078D897 /* AirPlayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F731783270465F500606A5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F7317852704663400606A5E /* ListViewModel.swift */,
+				9FC6837427058F9F0087148B /* SliderMenuViewModel.swift */,
+				9F2C9DF0270B3D3900B34360 /* PlayerViewModel.swift */,
+				9F16CFAE273C1C3E0088814A /* LoginViewModel.swift */,
+				9F5723E2273DB39D0073F6BF /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F7317842704660300606A5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FC68378270591CB0087148B /* dataSource.json */,
+				9F7317872704665700606A5E /* BeatportModel.swift */,
+				9FC6837627058FBF0087148B /* DataSourceModel.swift */,
+				9F2C9DF2270B3DFF00B34360 /* YoutubeModel.swift */,
+				9F16CFB0273C245F0088814A /* LoginModel.swift */,
+				9F5723E4273DB3AC0073F6BF /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FA8171027596A1300EBDBBF /* BeatportPlayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F982C07275E09DC00FF7476 /* FakeModel.swift */,
+				9FA8171127596A1300EBDBBF /* BeatportPlayWidget.swift */,
+				9FA8171327596A1300EBDBBF /* BeatportPlayWidget.intentdefinition */,
+				9FA8171427596A1300EBDBBF /* Assets.xcassets */,
+				9FA8171627596A1300EBDBBF /* Info.plist */,
+			);
+			path = BeatportPlayWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F7317702704655F00606A5E /* BeatportPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F73177F2704656100606A5E /* Build configuration list for PBXNativeTarget "BeatportPlay" */;
+			buildPhases = (
+				82D52863C05A89D2898DD895 /* [CP] Check Pods Manifest.lock */,
+				9F73176D2704655F00606A5E /* Sources */,
+				9F73176E2704655F00606A5E /* Frameworks */,
+				9F73176F2704655F00606A5E /* Resources */,
+				85B22370C7EBC3CB2528305F /* [CP] Embed Pods Frameworks */,
+				9F2B0B7D274314F900373EED /* ShellScript */,
+				9FD2319B2758FCEF00C68856 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA8171A27596A1300EBDBBF /* PBXTargetDependency */,
+			);
+			name = BeatportPlay;
+			productName = BeatportPlay;
+			productReference = 9F7317712704655F00606A5E /* BeatportPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA8170C27596A1300EBDBBF /* BeatportPlayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA8171E27596A1300EBDBBF /* Build configuration list for PBXNativeTarget "BeatportPlayWidgetExtension" */;
+			buildPhases = (
+				9FA8170927596A1300EBDBBF /* Sources */,
+				9FA8170A27596A1300EBDBBF /* Frameworks */,
+				9FA8170B27596A1300EBDBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatportPlayWidgetExtension;
+			productName = BeatportPlayWidgetExtension;
+			productReference = 9FA8170D27596A1300EBDBBF /* BeatportPlayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F7317692704655F00606A5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9F7317702704655F00606A5E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9FA8170C27596A1300EBDBBF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F73176C2704655F00606A5E /* Build configuration list for PBXProject "BeatportPlay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F7317682704655F00606A5E;
+			productRefGroup = 9F7317722704655F00606A5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F7317702704655F00606A5E /* BeatportPlay */,
+				9FA8170C27596A1300EBDBBF /* BeatportPlayWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F73176F2704655F00606A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F73177C2704656100606A5E /* Preview Assets.xcassets in Resources */,
+				9FC68379270591CB0087148B /* dataSource.json in Resources */,
+				9F8E1C6A27582B6E00899FDF /* Property List.plist in Resources */,
+				9F75BC6E2759167D00D81B95 /* LaunchScreen.storyboard in Resources */,
+				9F7317792704656100606A5E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA8170B27596A1300EBDBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA8171527596A1300EBDBBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82D52863C05A89D2898DD895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeatportPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B22370C7EBC3CB2528305F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeatportPlay/Pods-BeatportPlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeatportPlay/Pods-BeatportPlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeatportPlay/Pods-BeatportPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2B0B7D274314F900373EED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F73176D2704655F00606A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7317882704665700606A5E /* BeatportModel.swift in Sources */,
+				9F73178A2704668E00606A5E /* CellHelper.swift in Sources */,
+				9FC6837327058F890087148B /* SliderMenuView.swift in Sources */,
+				9F16CFAD273C1AA40088814A /* LoginView.swift in Sources */,
+				9F16CFAF273C1C3E0088814A /* LoginViewModel.swift in Sources */,
+				9FE78FD927672B650078D897 /* AirPlayView.swift in Sources */,
+				9F73178C2704670600606A5E /* ListView.swift in Sources */,
+				9F2C9DF1270B3D3900B34360 /* PlayerViewModel.swift in Sources */,
+				9FC6837527058F9F0087148B /* SliderMenuViewModel.swift in Sources */,
+				9F5723E3273DB39D0073F6BF /* RegisterViewModel.swift in Sources */,
+				9F16CFB1273C245F0088814A /* LoginModel.swift in Sources */,
+				9F5723E1273DB37B0073F6BF /* RegisterView.swift in Sources */,
+				9F084602270904080001C0A0 /* PlayerView.swift in Sources */,
+				9FC6837727058FBF0087148B /* DataSourceModel.swift in Sources */,
+				9F2C9DEF270B3B8100B34360 /* YoutubePlayer.swift in Sources */,
+				9FEA2D2E2763E7C700AD693A /* CustomProgressView.swift in Sources */,
+				9F7317772704655F00606A5E /* ContentView.swift in Sources */,
+				9F2C9DF3270B3DFF00B34360 /* YoutubeModel.swift in Sources */,
+				9FA8171827596A1300EBDBBF /* BeatportPlayWidget.intentdefinition in Sources */,
+				9F5723E5273DB3AC0073F6BF /* RegisterModel.swift in Sources */,
+				9F7317752704655F00606A5E /* BeatportPlayApp.swift in Sources */,
+				9F7317862704663400606A5E /* ListViewModel.swift in Sources */,
+				9FB1883D271378D5009CE7BF /* CustomAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA8170927596A1300EBDBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB7C7C4275AD00800870CF1 /* BeatportModel.swift in Sources */,
+				9FE93CC9275BD8CB0042C0CC /* CellHelper.swift in Sources */,
+				9FA8171227596A1300EBDBBF /* BeatportPlayWidget.swift in Sources */,
+				9FF27FC027598BDC003C3957 /* ListViewModel.swift in Sources */,
+				9F982C09275E0BFF00FF7476 /* FakeModel.swift in Sources */,
+				9FA8171727596A1300EBDBBF /* BeatportPlayWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA8171A27596A1300EBDBBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA8170C27596A1300EBDBBF /* BeatportPlayWidgetExtension */;
+			targetProxy = 9FA8171927596A1300EBDBBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F73177D2704656100606A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F73177E2704656100606A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F7317802704656100606A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD9F09EEFC45A2E2C0C032B /* Pods-BeatportPlay.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeatportPlay/BeatportPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeatportPlay/Preview Content\"";
+				DEVELOPMENT_TEAM = 286V6NN9R7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatportPlay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatportPlay;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeatportPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F7317812704656100606A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E446FE404404687C6717D54 /* Pods-BeatportPlay.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeatportPlay/BeatportPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeatportPlay/Preview Content\"";
+				DEVELOPMENT_TEAM = 286V6NN9R7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatportPlay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatportPlay;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeatportPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FA8171C27596A1300EBDBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BeatportPlayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 286V6NN9R7;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = BeatportPlayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatportPlayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeatportPlay.BeatportPlayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA8171D27596A1300EBDBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BeatportPlayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 286V6NN9R7;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = BeatportPlayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatportPlayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeatportPlay.BeatportPlayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F73176C2704655F00606A5E /* Build configuration list for PBXProject "BeatportPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F73177D2704656100606A5E /* Debug */,
+				9F73177E2704656100606A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F73177F2704656100606A5E /* Build configuration list for PBXNativeTarget "BeatportPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F7317802704656100606A5E /* Debug */,
+				9F7317812704656100606A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA8171E27596A1300EBDBBF /* Build configuration list for PBXNativeTarget "BeatportPlayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA8171C27596A1300EBDBBF /* Debug */,
+				9FA8171D27596A1300EBDBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F7317692704655F00606A5E /* Project object */;
+}
