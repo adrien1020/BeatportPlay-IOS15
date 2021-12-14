@@ -14,6 +14,7 @@ struct LoginView: View {
     @StateObject var listVM = ListViewModel()
     @State private var username = ""
     @State private var password = ""
+    @Binding var isLimitedUsage: Bool
     var body: some View {
         ZStack {
             NavigationView {
@@ -65,12 +66,25 @@ struct LoginView: View {
                                     .cornerRadius(10)
                                 })
                                     .disabled(loginVM.isLoading)
-                                HStack {
-                                    Text("Don't have an account?")
-                                        .foregroundColor(.secondary)
-                                    NavigationLink(destination: RegisterView()) {
-                                        Text("Sign Up")
-                                            .fontWeight(.bold)
+                                VStack(spacing: 6) {
+                                    HStack {
+                                        Text("Don't have an account?")
+                                            .foregroundColor(.secondary)
+                                        NavigationLink(destination: RegisterView()) {
+                                            Text("Sign Up")
+                                                .fontWeight(.semibold)
+                                        }
+                                    }
+                                    LabelledDivider(label: "or")
+                                    HStack {
+                                        Text("Switching to")
+                                            .foregroundColor(.secondary)
+                                        Button(action: {
+                                            self.isLimitedUsage.toggle()
+                                        }, label: {
+                                            Text("limited usage")
+                                                .fontWeight(.semibold)
+                                        })
                                     }
                                 }
                             }
@@ -101,5 +115,31 @@ struct LoginView: View {
         .onTapGesture {
             hideKeyboard()
         }
+    }
+}
+
+struct LabelledDivider: View {
+    let label: String
+    let horizontalPadding: CGFloat
+    let color: Color
+    init(label: String, horizontalPadding: CGFloat = 20, color: Color = .gray) {
+        self.label = label
+        self.horizontalPadding = horizontalPadding
+        self.color = color
+    }
+    var body: some View {
+        HStack {
+            line
+            Text(label)
+                .foregroundColor(color)
+            line
+        }
+    }
+    var line: some View {
+        VStack {
+            Divider()
+                .background(color)
+        }
+        .padding(horizontalPadding)
     }
 }

@@ -15,11 +15,12 @@ struct BeatportPlayApp: App {
     @StateObject var loginVM = LoginViewModel()
     @StateObject var listVM = ListViewModel()
     @State var isPlaying: Bool = false
+    @State var isLimitedUsage: Bool = false
     @Environment(\.scenePhase) private var scenePhase
     var body: some Scene {
         WindowGroup {
-            if !loginVM.isAuth {
-                LoginView()
+            if !loginVM.isAuth && !isLimitedUsage {
+                LoginView(isLimitedUsage: $isLimitedUsage)
                     .environmentObject(loginVM)
             } else {
                 ContentView(isPlaying: $isPlaying, playerView: playerView)

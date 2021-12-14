@@ -77,7 +77,9 @@ struct ContentView: View {
                                title: $title, remixers: $remixers,
                                image: $image, isPlaying: $isPlaying, playerView: playerView)
                     SliderMenuView(slideMenuBackgroundBlank: $slideMenuBackgroundBlank,
-                                   navigationTitle: $navigationTitle, x: $x, width: $width, isOpen: $isOpen)
+                                   navigationTitle: $navigationTitle,
+                                   x: $x,
+                                   width: $width, isOpen: $isOpen)
                         .offset(x: self.x)
                         .background(Color.black.opacity(x == 0 ? 0.5 :0))
                         .ignoresSafeArea(.all)
@@ -107,6 +109,9 @@ struct ContentView: View {
             }
             if listVM.showAlert {
                 CustomAlert(title: "Connection Error:", message: listVM.error, showAlert: $listVM.showAlert)
+                    .task {
+                        self.listVM.isdownload = false
+                    }
             }
             if listVM.isdownload {
                 CustomProgressView()

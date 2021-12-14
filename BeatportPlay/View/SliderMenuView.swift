@@ -50,7 +50,7 @@ struct SliderMenuView: View {
                             VStack(alignment: .leading, spacing: 20) {
                                 ForEach(sliderMenuVM.dataSourceModel) { dataSource in
                                     Button(action: {listVM.getBeatPortData(dataSource.api, loginVM.token)
-                                        navigationTitle = dataSource.genre
+                                           self.navigationTitle = dataSource.genre
                                         withAnimation {
                                             self.isOpen = false
                                             self.x = -width
@@ -84,6 +84,7 @@ struct SliderMenuView: View {
 struct SliderMenuView_Previews: PreviewProvider {
     @State static var slideMenuBackgroundBlank: CGFloat = 100
     @State static var navigationTitle: String = "Main"
+    @State static var currentNavigationTitle: String = ""
     @State static var isSelected: Bool = false
     @State static var x: CGFloat = 0
     @State static var width: CGFloat = 0
@@ -91,6 +92,6 @@ struct SliderMenuView_Previews: PreviewProvider {
     static var previews: some View {
         SliderMenuView(slideMenuBackgroundBlank: $slideMenuBackgroundBlank,
                        navigationTitle: $navigationTitle,
-                       x: $x, width: $width, isOpen: $isOpen)
+                        x: $x, width: $width, isOpen: $isOpen)
     }
 }

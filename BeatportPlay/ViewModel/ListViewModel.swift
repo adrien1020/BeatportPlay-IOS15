@@ -15,7 +15,8 @@ class ListViewModel: ObservableObject {
     @Published var isdownload = false
     @Published var error = ""
     @Published var showAlert = false
-    @AppStorage("top100", store: UserDefaults(suiteName: "group.com.BeatportPlay")) var datatop100: Data = Data()
+    @AppStorage("top100", store: UserDefaults(suiteName: "group.com.BeatportPlay"))
+    var datatop100: Data = Data()
     func getBeatPortData(_ url: String, _ token: String) {
         self.setUrl = url
         self.showAlert = false
@@ -28,18 +29,18 @@ class ListViewModel: ObservableObject {
                     if let safeData = data {
                         do {
                             let results = try decoder.decode([BeatPortModel].self, from: safeData)
-                            DispatchQueue.main.async {
+                            DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {
                                 self.beatportData = results.sorted { $0.id < $1.id }
                                 self.datatop100 = safeData
                                 self.isdownload = false
                                 self.error = ""
                                 self.showAlert = false
-                            }
+                            })
                         } catch {
-                            DispatchQueue.main.async {
-                            self.error = error.localizedDescription
-                                self.showAlert = true
-                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {
+                                self.error = "You are not registered to access this category"
+                                    self.showAlert = true
+                            })
                         }
                     }
                 } else {
@@ -50,9 +51,5 @@ class ListViewModel: ObservableObject {
                 }
             }
             task.resume()
-    }
-    func getData(_ widgetData: Data, completion: @escaping([BeatPortModel]) -> Void) {
-        guard let data = try?JSONDecoder().decode([BeatPortModel].self, from: widgetData)else {return}
-        completion(data.sorted {$0.id < $1.id})
     }
 }
